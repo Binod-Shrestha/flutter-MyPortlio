@@ -12,6 +12,7 @@ class ProjectsPage extends StatelessWidget {
       drawer: SafeArea(
         child: Menu(),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: null),
       body: Center(
         child: Text('Welcome to Projects Page'),
       ),

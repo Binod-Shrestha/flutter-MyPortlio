@@ -7,6 +7,9 @@ class CoursesPage extends StatefulWidget {
 }
 
 class _CoursesPageState extends State<CoursesPage> {
+  String _value = '';
+  void _onClicked() => setState(() => _value = 'Thank you for clicking me.');
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,8 +21,17 @@ class _CoursesPageState extends State<CoursesPage> {
       drawer: SafeArea(
         child: Menu(),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _onClicked,
+        mini: true,
+        backgroundColor: Colors.blue,
+        child: Icon(Icons.thumb_up),
+      ),
       body: Center(
-        child: Text('Welcome to Courses Page'),
+        child: Text(
+          _value,
+          style: TextStyle(fontSize: 20.0),
+        ),
       ),
     );
   }
