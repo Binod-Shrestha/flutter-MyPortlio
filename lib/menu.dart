@@ -33,13 +33,25 @@ class Menu extends StatelessWidget {
             title: const Text('Home'),
             onTap: () => Navigator.of(context).pushNamed('/'),
           ),
+          Divider(
+            height: 5.0,
+            color: Colors.black,
+          ),
           ListTile(
             title: const Text('Courses'),
             onTap: () => Navigator.of(context).pushNamed('/Courses'),
           ),
+          Divider(
+            height: 5.0,
+            color: Colors.black,
+          ),
           ListTile(
               title: const Text('Projects'),
-              onTap: () => Navigator.of(context).pushNamed('/Projects'))
+              onTap: () => Navigator.of(context).pushNamed('/Projects')),
+          Divider(
+            height: 5.0,
+            color: Colors.black,
+          ),
         ],
       ),
     );

@@ -7,6 +7,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  String _value = '';
+  void _onClicked() => setState(() => _value = DateTime.now().toString());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,6 +21,12 @@ class _HomePageState extends State<HomePage> {
       ),
       drawer: SafeArea(
         child: Menu(),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _onClicked,
+        backgroundColor: Colors.red,
+        mini: true,
+        child: Icon(Icons.timer),
       ),
       body: Center(
         child: Column(
@@ -44,7 +53,10 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            Text('Welcome to Home Page'),
+            Text(
+              _value,
+              style: TextStyle(fontSize: 20.0, color: Colors.green),
+            ),
           ],
         ),
       ),
