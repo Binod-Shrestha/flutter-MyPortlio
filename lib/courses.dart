@@ -30,34 +30,68 @@ class _CoursesPageState extends State<CoursesPage> {
       body: ListView(
         children: <Widget>[
           ListTile(
-            title: Text('Advance Java Framework-Spring Boot'),
+            title: Text('Advance Java Framework-Spring Boot',
+                style: TextStyle(fontWeight: FontWeight.bold)),
             subtitle: Text('CRUD operation, Spring Security'),
-            leading: Icon(Icons.star),
+            leading: Icon(
+              Icons.star,
+              color: Colors.red,
+            ),
+            trailing: Icon(Icons.thumb_up),
           ),
           ListTile(
-            title: Text('iOS App Development'),
+            title: Text('iOS App Development',
+                style: TextStyle(fontWeight: FontWeight.bold)),
             subtitle: Text('CRUD operation,UI Design'),
-            leading: Icon(Icons.star),
+            leading: Icon(
+              Icons.star,
+              color: Colors.blue,
+            ),
+            trailing: Icon(Icons.thumb_up),
           ),
           ListTile(
-            title: Text('Android App Deveopment'),
+            title: Text('Android App Deveopment',
+                style: TextStyle(fontWeight: FontWeight.bold)),
             subtitle: Text('CRUD operation, UI Design'),
-            leading: Icon(Icons.star),
+            leading: Icon(
+              Icons.star,
+              color: Colors.yellow,
+            ),
+            trailing: Icon(Icons.thumb_up),
           ),
           ListTile(
-            title: Text('Flutter and Dart'),
+            title: Text('Flutter and Dart',
+                style: TextStyle(fontWeight: FontWeight.bold)),
             subtitle: Text('CRUD operation, UI Design'),
-            leading: Icon(Icons.star),
+            leading: Icon(
+              Icons.star,
+              color: Colors.pink,
+            ),
+            trailing: Icon(Icons.thumb_up),
           ),
           ListTile(
-            title: Text('RDBMS'),
-            subtitle: Text('CRUD operation'),
-            leading: Icon(Icons.star),
+            title: Text(
+              'RDBMS',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            subtitle: Text(
+              'CRUD operation',
+            ),
+            leading: Icon(
+              Icons.star,
+              color: Colors.green,
+            ),
+            trailing: Icon(Icons.thumb_up),
           ),
           ListTile(
-            title: Text('Networking'),
+            title: Text('Networking',
+                style: TextStyle(fontWeight: FontWeight.bold)),
             subtitle: Text('CRUD operation'),
-            leading: Icon(Icons.star),
+            leading: Icon(
+              Icons.star,
+              color: Colors.amber,
+            ),
+            trailing: Icon(Icons.thumb_up),
           )
         ],
       ),

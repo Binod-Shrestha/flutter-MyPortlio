@@ -32,6 +32,7 @@ class Menu extends StatelessWidget {
           ListTile(
             title: const Text('Home'),
             onTap: () => Navigator.of(context).pushNamed('/'),
+            leading: Icon(Icons.home),
           ),
           Divider(
             height: 5.0,
@@ -39,6 +40,7 @@ class Menu extends StatelessWidget {
           ),
           ListTile(
             title: const Text('Courses'),
+            leading: Icon(Icons.school),
             onTap: () => Navigator.of(context).pushNamed('/Courses'),
           ),
           Divider(
@@ -48,6 +50,27 @@ class Menu extends StatelessWidget {
           ListTile(
               title: const Text('Projects'),
               onTap: () => Navigator.of(context).pushNamed('/Projects')),
+          Divider(
+            height: 5.0,
+            color: Colors.black,
+          ),
+          ListTile(
+              title: const Text('Resume'),
+              onTap: () => Navigator.of(context).pushNamed('/Resume')),
+          Divider(
+            height: 5.0,
+            color: Colors.black,
+          ),
+          ListTile(
+              title: const Text('Volunteer'),
+              onTap: () => Navigator.of(context).pushNamed('/Volunteer')),
+          Divider(
+            height: 5.0,
+            color: Colors.black,
+          ),
+          ListTile(
+              title: const Text('Awards & Achievements'),
+              onTap: () => Navigator.of(context).pushNamed('/Awards')),
           Divider(
             height: 5.0,
             color: Colors.black,
