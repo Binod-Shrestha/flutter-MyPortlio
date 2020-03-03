@@ -27,11 +27,39 @@ class _CoursesPageState extends State<CoursesPage> {
         backgroundColor: Colors.blue,
         child: Icon(Icons.thumb_up),
       ),
-      body: Center(
-        child: Text(
-          _value,
-          style: TextStyle(fontSize: 20.0),
-        ),
+      body: ListView(
+        children: <Widget>[
+          ListTile(
+            title: Text('Advance Java Framework-Spring Boot'),
+            subtitle: Text('CRUD operation, Spring Security'),
+            leading: Icon(Icons.star),
+          ),
+          ListTile(
+            title: Text('iOS App Development'),
+            subtitle: Text('CRUD operation,UI Design'),
+            leading: Icon(Icons.star),
+          ),
+          ListTile(
+            title: Text('Android App Deveopment'),
+            subtitle: Text('CRUD operation, UI Design'),
+            leading: Icon(Icons.star),
+          ),
+          ListTile(
+            title: Text('Flutter and Dart'),
+            subtitle: Text('CRUD operation, UI Design'),
+            leading: Icon(Icons.star),
+          ),
+          ListTile(
+            title: Text('RDBMS'),
+            subtitle: Text('CRUD operation'),
+            leading: Icon(Icons.star),
+          ),
+          ListTile(
+            title: Text('Networking'),
+            subtitle: Text('CRUD operation'),
+            leading: Icon(Icons.star),
+          )
+        ],
       ),
     );
   }
